@@ -1,0 +1,56 @@
+class Celebrity {
+  final String id;
+  final String name;
+  final String age;
+  final String country;
+  final String profession;
+  final String description;
+  final String profileImage;
+
+  Celebrity({
+    this.id,
+    this.name,
+    this.age,
+    this.country,
+    this.profession,
+    this.description,
+    this.profileImage,
+  });
+}
+
+List<Celebrity> celebrities = <Celebrity>[
+  Celebrity(
+    id: "01",
+    name: "Thuso Mbedu",
+    age: "25",
+    country: "South Africa",
+    profession: "Actress",
+    profileImage: "assets/images/01.jpeg",
+    description:
+        "This Wits graduate raised South Africa’s flag high when nominated in the ‘Best Performance by an Actress’ category at the 2017 International Emmy Awards, for her role as Winnie on Mzansi Magic’s TV drama, Is’thunzi. She made her on-screen debut in 2014 in the Mzansi Magic drama series, Saints and Sinners."
+        "In 2014, she had a small recurring role in yet another Mzansi Magic soap Isibaya, before landing her a high-profile role as journalism student and wild child Kitso on local soap Scandal! Mbedu has also starred as Ipeleng in the international TV series MTV Shuga."
+        "Under the mentorship of Amanda Lane, one of South Africa’s greatest writers and directors, she is currently working on developing a feature film funded by the KZN Film Commission."
+        "Furthermore, I am editing the script of a series I wrote called iDRIVE. iDRIVE, a crime action series set in the digital space. It is fast-paced and thought-provoking and I was fortunate to film the pilot in April with money I received from my role as Ipeleng in MTV Shuga."
+        "She has also made her first international debut on the Danish TV series Liberty. It seems there is no stopping her.",
+  ),
+  Celebrity(
+    id: "02",
+    name: "Maria Borges",
+    age: "25",
+    country: "Angola",
+    profession: "Supermodel",
+    profileImage: "assets/images/02.jpg",
+    description:
+        "This Angolan beauty was the first-ever model to walk the Victoria’s Secret annual show in her Afro. Borges was born during Angola’s civil war. At age 11, her mother died. She was raised by her sister only five years her senior. Borges started modelling for a living. She took part in the ‘Elite Model Look Angola’ competition in 2010 and grabbed the attention of a local model scout who placed her in an overseas agency. With dreams of following in the footsteps of her idol, Naomi Campbell, it wasn’t long before she started making waves on the streets of New York. She booked 17 shows in her first New York Fashion Week season and became a Givenchy exclusive in her second season. She has also walked the runway for Tom Ford, Balmain, Dior, Giorgio Armani, Versace, Oscar de la Renta and Ralph Lauren. In 2016, she became a global ambassador for L’Oréal.",
+  ),
+  Celebrity(
+    id: "03",
+    name: "Herieth Paul",
+    age: "22",
+    country: "Tanzania",
+    profession: "Supermodel",
+    profileImage: "assets/images/03.jpg",
+    description:
+        "Paul was discovered at an open call at Angie’s AMTI, a model agency in Canada. She signed with Women Management New York in 2010 and was on the runway to success from there. She has appeared in Vogue Italia, where she was a cover star, i-D, Wonderland and Teen Vogue. She was one of three models in the Tom Ford Fall/Winter 2013 campaign, photographed by the designer himself. She also walked the coveted Victoria’s Secret Fashion Show not once but twice, and has joined the likes of supermodels Gigi Hadid and Jourdan Dunn as the face of Maybelline.",
+  )
+];

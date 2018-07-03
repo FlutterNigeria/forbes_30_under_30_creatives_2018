@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:forbes_africa_30/models/celebrity.dart';
+import 'package:forbes_africa_30/ui/home/celebrity_details.dart';
 
 class CelebrityRow extends StatelessWidget {
   final Celebrity celebrity;
@@ -108,25 +109,39 @@ class CelebrityRow extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 16.0),
       alignment: FractionalOffset.centerLeft,
       child: ClipOval(
-        child: Image(
-          image: AssetImage(this.celebrity.profileImage),
-          fit: BoxFit.cover,
-          height: 92.0,
-          width: 92.0,
+        child: Hero(
+          tag: "profile-pic-${this.celebrity.id}",
+          child: Image(
+            image: AssetImage(this.celebrity.profileImage),
+            fit: BoxFit.cover,
+            height: 92.0,
+            width: 92.0,
+          ),
         ),
       ),
     );
 
-    return Container(
-      padding: EdgeInsets.symmetric(
-        vertical: 16.0,
-        horizontal: 24.0,
-      ),
-      child: Stack(
-        children: <Widget>[
-          celebrityInfoCard,
-          celebrityThumbnail,
-        ],
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) {
+              return CelebrityDetails(celebrity: this.celebrity);
+            },
+          ),
+        );
+      },
+      child: Container(
+        padding: EdgeInsets.symmetric(
+          vertical: 16.0,
+          horizontal: 24.0,
+        ),
+        child: Stack(
+          children: <Widget>[
+            celebrityInfoCard,
+            celebrityThumbnail,
+          ],
+        ),
       ),
     );
   }

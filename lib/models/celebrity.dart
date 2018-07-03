@@ -52,5 +52,28 @@ List<Celebrity> celebrities = <Celebrity>[
     profileImage: "assets/images/03.jpg",
     description:
         "Paul was discovered at an open call at Angie’s AMTI, a model agency in Canada. She signed with Women Management New York in 2010 and was on the runway to success from there. She has appeared in Vogue Italia, where she was a cover star, i-D, Wonderland and Teen Vogue. She was one of three models in the Tom Ford Fall/Winter 2013 campaign, photographed by the designer himself. She also walked the coveted Victoria’s Secret Fashion Show not once but twice, and has joined the likes of supermodels Gigi Hadid and Jourdan Dunn as the face of Maybelline.",
-  )
+  ),
+  Celebrity(
+    id: "04",
+    name: "Eddy Kamuanga",
+    age: "26",
+    country: "DRC",
+    profession: "Painter",
+    profileImage: "assets/images/04.jpg",
+    description:
+        "Kamuanga Illunga’s work is thought-provoking and tells stories about the Congolese nation’s past, present and future. He explores shifts in the economic, political and social identity of the DRC since colonialization.\n"
+        "Besides Africa, the contemporary artist has exhibited his works in galleries across the world, including the Saatchi Gallery in London, the Birmingham Museum and Art Gallery, the Royal Academy of Arts in London and the Fowler Museum in Los Angeles. His work is also included in several important collections. Business mogul Charles Saatchi resold one of Kamuanga Illunga’s paintings for \$93,000. His paintings cost an average of \$45,000 each..",
+  ),
+  Celebrity(
+    id: "05",
+    name: "Cassper Nyovest",
+    age: "27",
+    country: "South Africa",
+    profession: "Rapper, Entrepreneur",
+    profileImage: "assets/images/05.jpg",
+    description:
+    "Cassper Nyovest, born Refiloe Maele Phoolo, loved performing before huge crowds while in primary school, where he fought to be on every play and show. Inspired by his late brother, Khotso Motebang Phoolo, who was also a rapper, Nyovest signed a record deal with Impact Sounds at just 17 years old. He produced hits like Gusheshe, Malome and Mama I Made It. He has shared the stage with international artists Kid Cudi, Kendrick Lamar, Nas, Wizkid and Wiz Khalifa.\n"
+    "The rapper also started his own record label, Family Tree, the same year he released his debut album, Tsholofelo. His string of awards include the 2015 MTV African Music Awards Winner: Best African Hip Hop Act, 2015 African Music Awards Winner: Best Sothern Africa Male Artist & Best African Hip Hop Award.\n"
+    "On October 31, 2015, Nyovest made history by becoming the -first African artiste to sell out Ticketpro Dome, a venue in Johannesburg. He is a 2018 nominee for the BET Best International Act Award.",
+  ),
 ];

@@ -12,42 +12,6 @@ class ForbesAfricaCreatives extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             GradientAppBar("Forbes"),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 24.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                    color: Color(0xfff0c330),
-                    child: Text(
-                      "30 Under 30",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w600,
-                          fontFamily: 'Poppins'),
-                    ),
-                  ),
-                  Container(
-                    color: Colors.black,
-                    child: Row(
-                      children: <Widget>[
-                        Expanded(
-                          child: Text(
-                            "Under 30 Creatives",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 22.0,
-                                fontWeight: FontWeight.w600,
-                                fontFamily: 'Poppins'),
-                          ),
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            ),
             ForbesAfricaBody(),
           ],
         ),
@@ -64,10 +28,53 @@ class ForbesAfricaBody extends StatelessWidget {
     return Expanded(
       child: ListView.builder(
         itemBuilder: (_, index) {
-          return CelebrityRow(celebs[index]);
+          if (index == 0) {
+            return titleWidget();
+          }
+
+          return CelebrityRow(celebs[index - 1]);
         },
-        itemCount: celebs.length,
-        itemExtent: 156.0,
+        itemCount: celebs.length + 1,
+       // itemExtent: 156.0,
+      ),
+    );
+  }
+
+  Widget titleWidget() {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 24.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Container(
+            color: Color(0xfff0c330),
+            child: Text(
+              "30 Under 30",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.w600,
+                  fontFamily: 'Poppins'),
+            ),
+          ),
+          Container(
+            color: Colors.black,
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: Text(
+                    "Under 30 Creatives",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.w600,
+                        fontFamily: 'Poppins'),
+                  ),
+                ),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }

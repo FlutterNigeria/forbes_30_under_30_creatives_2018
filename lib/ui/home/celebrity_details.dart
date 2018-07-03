@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:forbes_africa_30/models/celebrity.dart';
 import 'package:forbes_africa_30/ui/home/celebrity_row.dart';
+import 'package:forbes_africa_30/ui/styles/fonts.dart';
 
 class CelebrityDetails extends StatefulWidget {
-
   final Celebrity celebrity;
 
   const CelebrityDetails({Key key, this.celebrity}) : super(key: key);
@@ -14,16 +14,13 @@ class CelebrityDetails extends StatefulWidget {
   }
 }
 
-class CelebrityDetailsState extends State<CelebrityDetails> with SingleTickerProviderStateMixin {
-
+class CelebrityDetailsState extends State<CelebrityDetails>
+    with SingleTickerProviderStateMixin {
   ScrollController scrollController;
-
   AnimationController animationController;
-
   Animation<double> animation;
 
   int scrollPosition = 0;
-
 
   @override
   void initState() {
@@ -38,9 +35,9 @@ class CelebrityDetailsState extends State<CelebrityDetails> with SingleTickerPro
       });
     });
 
-    animationController = AnimationController(vsync: this,duration: Duration(milliseconds: 500));
+    animationController =
+        AnimationController(vsync: this, duration: Duration(milliseconds: 500));
   }
-
 
   @override
   void dispose() {
@@ -50,11 +47,6 @@ class CelebrityDetailsState extends State<CelebrityDetails> with SingleTickerPro
 
   @override
   Widget build(BuildContext context) {
-    final baseTextStyle = const TextStyle(fontFamily: 'Poppins');
-
-    final regularTextStyle = baseTextStyle.copyWith(
-        color: Colors.white70, fontSize: 9.0, fontWeight: FontWeight.w400);
-
     return Scaffold(
       body: Container(
         constraints: BoxConstraints.expand(),
@@ -103,12 +95,7 @@ class CelebrityDetailsState extends State<CelebrityDetails> with SingleTickerPro
                           children: <Widget>[
                             Text(
                               widget.celebrity.name,
-                              style: TextStyle(
-                                fontFamily: "Poppin",
-                                fontWeight: FontWeight.w600,
-                                fontSize: 25.0,
-                                color: Colors.white,
-                              ),
+                              style: headerTextStyle.copyWith(fontSize: 25.0),
                             ),
                             SizedBox(
                               height: 8.0,
@@ -118,10 +105,8 @@ class CelebrityDetailsState extends State<CelebrityDetails> with SingleTickerPro
                               padding: EdgeInsets.symmetric(horizontal: 8.0),
                               child: Text(
                                 widget.celebrity.profession,
-                                style: TextStyle(
-                                  fontFamily: "Poppin",
+                                style: headerTextStyle.copyWith(
                                   fontWeight: FontWeight.w400,
-                                  fontSize: 18.0,
                                   color: Colors.black,
                                 ),
                               ),
@@ -210,7 +195,8 @@ class CelebrityDetailsState extends State<CelebrityDetails> with SingleTickerPro
             Opacity(
               opacity: scrollPosition > 180 ? 0.0 : 1.0,
               child: Container(
-                padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
+                padding:
+                    EdgeInsets.only(top: MediaQuery.of(context).padding.top),
                 child: Row(
                   children: <Widget>[
                     IconButton(

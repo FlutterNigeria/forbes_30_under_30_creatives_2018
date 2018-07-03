@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:forbes_africa_30/models/celebrity.dart';
 import 'package:forbes_africa_30/ui/home/celebrity_details.dart';
+import 'package:forbes_africa_30/ui/styles/fonts.dart';
 
 class CelebrityRow extends StatelessWidget {
   final Celebrity celebrity;
@@ -9,16 +10,6 @@ class CelebrityRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final baseTextStyle = const TextStyle(fontFamily: 'Poppins');
-
-    final headerTextStyle = baseTextStyle.copyWith(
-        color: Colors.white, fontSize: 18.0, fontWeight: FontWeight.w600);
-
-    final regularTextStyle = baseTextStyle.copyWith(
-        color: Colors.white70, fontSize: 9.0, fontWeight: FontWeight.w400);
-
-    final subHeaderTextStyle = regularTextStyle.copyWith(fontSize: 12.0);
-
     final Widget celebrityInfoCardContent = Container(
       margin: EdgeInsets.fromLTRB(76.0, 16.0, 16.0, 16.0),
       constraints: BoxConstraints.expand(),

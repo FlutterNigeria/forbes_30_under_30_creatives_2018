@@ -72,8 +72,8 @@ List<Celebrity> celebrities = <Celebrity>[
     profession: "Rapper, Entrepreneur",
     profileImage: "assets/images/05.jpg",
     description:
-    "Cassper Nyovest, born Refiloe Maele Phoolo, loved performing before huge crowds while in primary school, where he fought to be on every play and show. Inspired by his late brother, Khotso Motebang Phoolo, who was also a rapper, Nyovest signed a record deal with Impact Sounds at just 17 years old. He produced hits like Gusheshe, Malome and Mama I Made It. He has shared the stage with international artists Kid Cudi, Kendrick Lamar, Nas, Wizkid and Wiz Khalifa.\n"
-    "The rapper also started his own record label, Family Tree, the same year he released his debut album, Tsholofelo. His string of awards include the 2015 MTV African Music Awards Winner: Best African Hip Hop Act, 2015 African Music Awards Winner: Best Sothern Africa Male Artist & Best African Hip Hop Award.\n"
-    "On October 31, 2015, Nyovest made history by becoming the -first African artiste to sell out Ticketpro Dome, a venue in Johannesburg. He is a 2018 nominee for the BET Best International Act Award.",
+        "Cassper Nyovest, born Refiloe Maele Phoolo, loved performing before huge crowds while in primary school, where he fought to be on every play and show. Inspired by his late brother, Khotso Motebang Phoolo, who was also a rapper, Nyovest signed a record deal with Impact Sounds at just 17 years old. He produced hits like Gusheshe, Malome and Mama I Made It. He has shared the stage with international artists Kid Cudi, Kendrick Lamar, Nas, Wizkid and Wiz Khalifa.\n"
+        "The rapper also started his own record label, Family Tree, the same year he released his debut album, Tsholofelo. His string of awards include the 2015 MTV African Music Awards Winner: Best African Hip Hop Act, 2015 African Music Awards Winner: Best Sothern Africa Male Artist & Best African Hip Hop Award.\n"
+        "On October 31, 2015, Nyovest made history by becoming the -first African artiste to sell out Ticketpro Dome, a venue in Johannesburg. He is a 2018 nominee for the BET Best International Act Award.",
   ),
 ];
